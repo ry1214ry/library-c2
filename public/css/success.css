@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #007478;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  margin-top: 100px;
+  padding: 50px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 0px white;
+}
+body main img {
+  width: 100px;
+}
+body main button {
+  width: 100px;
+  background: #007478;
+  border-radius: 5px;
+  height: 30px;
+}
+body main button a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+body main button:hover {
+  background: white;
+}
+body main button:hover a {
+  color: #007478;
+}/*# sourceMappingURL=success.css.map */
