@@ -62,5 +62,13 @@ node_modules/
 # Yarn Integrity file
 .yarn-integrity
 
+# Generated CSS
+public/css/*.css
+public/css/*.css.map
+public/css/dist/
+
+# Editor settings
+.vscode/
+
 # dotenv environment variables file
 .env
