@@ -225,10 +225,12 @@ footer .footer-right .icon img {
 }
 
 main {
-  display: grid;
-  height: auto;
-  grid-template-rows: 10% 45%;
   padding: 90px 90px 40px 90px;
+}
+@media screen and (max-width: 420px) {
+  main {
+    padding: 50px 15px 30px;
+  }
 }
 @media screen and (max-width: 730px) {
   main {
@@ -432,9 +434,9 @@ main .card-bottom:hover {
 .card-ceo .card-ceo-left .contact-ceo {
   display: flex;
   align-items: center;
-  text-align: center;
-  margin-top: -30px;
-  margin-left: 25%;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 1024px) {
   .card-ceo .card-ceo-left .contact-ceo {
@@ -454,7 +456,6 @@ main .card-bottom:hover {
 .card-ceo .card-ceo-left .contact-ceo a img {
   width: 27px;
   height: 25px;
-  margin-left: -19px;
 }
 @media screen and (max-width: 1024px) {
   .card-ceo .card-ceo-left .contact-ceo a img {

@@ -16,8 +16,8 @@ nav {
 }
 @media screen and (max-width: 420px) {
   nav {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    padding: 0 5px;
   }
 }
 nav img {
@@ -101,7 +101,6 @@ nav .icons-color {
   nav .icons-color {
     margin-top: 10px;
     font-size: 20px;
-    margin-left: 80px;
   }
 }
 

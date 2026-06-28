@@ -495,7 +495,6 @@ body #leadership .books .image-card {
   body #leadership .books .image-card {
     height: 240px;
     width: 170px;
-    margin-right: 30px;
   }
 }
 @media screen and (max-width: 730px) {
@@ -509,7 +508,6 @@ body #leadership .books .image-card {
   body #leadership .books .image-card {
     height: 190px;
     width: 120px;
-    margin-right: 30px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -521,9 +519,8 @@ body #leadership .books .image-card {
   body #book-of-legends .books .image-card,
   body #financial .books .image-card,
   body #leadership .books .image-card {
-    height: 130px;
-    width: 70px;
-    margin-right: -10px;
+    height: 160px;
+    width: 100px;
   }
 }
 body #education-book .books .image-card img, body #Self-Development .books .image-card img,
@@ -573,8 +570,8 @@ body #leadership .books .image-card img {
   body #book-of-legends .books .image-card img,
   body #financial .books .image-card img,
   body #leadership .books .image-card img {
-    width: 60px;
-    height: 90px;
+    width: 80px;
+    height: 120px;
   }
 }
 body #education-book .books button, body #Self-Development .books button,
@@ -601,10 +598,24 @@ body #leadership .books button {
   body #book-of-legends .books button,
   body #financial .books button,
   body #leadership .books button {
-    width: 60px;
-    height: 15px;
-    font-size: 10px;
+    width: 80px;
+    height: 22px;
+    font-size: 12px;
     border-radius: 3px;
+  }
+}
+@media screen and (max-width: 420px) {
+  body #education-book .books button, body #Self-Development .books button,
+  body #General-knowledge .books button,
+  body #market .books button,
+  body #cooking .books button,
+  body #Technology .books button,
+  body #book-of-legends .books button,
+  body #financial .books button,
+  body #leadership .books button {
+    width: 60px;
+    height: 18px;
+    font-size: 10px;
   }
 }
 body #education-book .books button a, body #Self-Development .books button a,
