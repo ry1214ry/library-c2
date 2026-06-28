@@ -9,9 +9,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 body main {
-  margin-top: 100px;
+  margin: 20px;
   padding: 50px;
   background: white;
   border-radius: 5px;
@@ -22,14 +23,43 @@ body main {
   flex-direction: column;
   box-shadow: 0px 0px 5px 0px white;
 }
+@media screen and (max-width: 420px) {
+  body main {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+}
 body main img {
   width: 100px;
+}
+@media screen and (max-width: 420px) {
+  body main img {
+    width: 70px;
+  }
+}
+body main h1 {
+  text-align: center;
+}
+@media screen and (max-width: 420px) {
+  body main h1 {
+    font-size: 20px;
+  }
+}
+body main p {
+  text-align: center;
+}
+@media screen and (max-width: 420px) {
+  body main p {
+    font-size: 14px;
+  }
 }
 body main button {
   width: 100px;
   background: #007478;
   border-radius: 5px;
   height: 30px;
+  border: 1px solid #007478;
+  cursor: pointer;
 }
 body main button a {
   text-decoration: none;
@@ -41,4 +71,4 @@ body main button:hover {
 }
 body main button:hover a {
   color: #007478;
-}/*# sourceMappingURL=success.css.map */
+}

@@ -248,7 +248,14 @@ main .about-main-center {
   main .about-main-center {
     display: flex;
     flex-direction: column;
-    gap: 35%;
+    gap: 20px;
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 730px) {
+  main .about-main-center {
+    padding: 0 5%;
+    gap: 20px;
   }
 }
 main .about-main-center .card-header,
@@ -342,20 +349,26 @@ main .card-bottom:hover {
 }
 @media screen and (max-width: 420px) {
   .card-ceo {
-    height: 100%;
-    grid-template-columns: 50% 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 5% 14% 11% 14%;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .card-ceo {
+    margin: 30px 20px;
+    height: auto;
   }
 }
 .card-ceo .card-ceo-left {
   background: rgb(218, 215, 211);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  grid-template-rows: 80% 10% 10%;
+  justify-content: center;
+  padding: 20px;
 }
 @media screen and (max-width: 1024px) {
   .card-ceo .card-ceo-left {
@@ -366,20 +379,16 @@ main .card-bottom:hover {
 @media screen and (max-width: 420px) {
   .card-ceo .card-ceo-left {
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 85% 15%;
-    padding: 4%;
+    height: auto;
+    padding: 15px;
   }
 }
 .card-ceo .card-ceo-left img {
   width: 220px;
-  display: grid;
-  align-items: center;
-  text-align: center;
+  max-width: 100%;
+  display: block;
   padding: 20px;
   border-radius: 30px;
-  margin-left: 13%;
 }
 @media screen and (max-width: 1024px) {
   .card-ceo .card-ceo-left img {
@@ -399,12 +408,14 @@ main .card-bottom:hover {
 @media screen and (max-width: 420px) {
   .card-ceo .card-ceo-left img {
     width: 80%;
-    height: 90%;
+    height: auto;
     padding: 5%;
-    display: grid;
-    align-items: center;
-    text-align: center;
-    margin-left: 4.5%;
+  }
+}
+@media screen and (max-width: 730px) {
+  .card-ceo .card-ceo-left img {
+    width: 80%;
+    padding: 5%;
   }
 }
 .card-ceo .card-ceo-left h3 {
@@ -434,14 +445,10 @@ main .card-bottom:hover {
 }
 @media screen and (max-width: 420px) {
   .card-ceo .card-ceo-left .contact-ceo {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0 20%;
-    margin-top: 0.3px;
-    margin-left: 40px;
-    gap: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
   }
 }
 .card-ceo .card-ceo-left .contact-ceo a img {
@@ -460,29 +467,20 @@ main .card-bottom:hover {
   }
 }
 .card-ceo .card-ceo-right {
-  padding-left: 10% 0% 0% 10%;
+  padding: 20px;
 }
 .card-ceo .card-ceo-right h2 {
   padding: 5%;
 }
+.card-ceo .card-ceo-right h2 {
+  padding: 0 0 15px;
+}
 .card-ceo .card-ceo-right p {
-  padding: 0% 5%;
-}
-@media screen and (max-width: 1024px) {
-  .card-ceo .card-ceo-right p {
-    padding: 5%;
-  }
-}
-@media screen and (max-width: 730px) {
-  .card-ceo .card-ceo-right p {
-    padding: 5%;
-  }
+  line-height: 1.6;
 }
 @media screen and (max-width: 420px) {
   .card-ceo .card-ceo-right p {
     margin-top: 10px;
-    display: grid;
-    align-items: center;
     text-align: center;
   }
 }
@@ -495,5 +493,13 @@ main .card-bottom:hover {
 @media screen and (max-width: 1024px) {
   .map {
     margin-top: 10%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .map {
+    margin-top: 20px;
+  }
+  .map iframe {
+    height: 200px;
   }
 }/*# sourceMappingURL=about_us.css.map */

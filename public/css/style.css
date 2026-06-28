@@ -234,7 +234,7 @@ body .cover {
 }
 @media screen and (max-width: 420px) {
   body .cover {
-    height: 10vh;
+    height: 260px;
     width: 100%;
   }
 }
@@ -272,7 +272,7 @@ body .cover p {
 @media screen and (max-width: 420px) {
   body .cover h1,
   body .cover p {
-    padding: 30px 50px;
+    padding: 20px 30px;
   }
 }
 body .cover p b {
@@ -319,10 +319,11 @@ body .cover .open {
 }
 @media screen and (max-width: 420px) {
   body .cover .open {
-    width: 200px;
+    width: 180px;
     height: 25px;
-    margin-top: 45px;
-    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 11px;
     box-shadow: 4px 4px 4px 0px rgb(108, 107, 107);
   }
 }
@@ -351,10 +352,11 @@ body .cover .open:hover {
 }
 @media screen and (max-width: 420px) {
   body .cover .open:hover {
-    width: 200px;
+    width: 180px;
     height: 25px;
-    margin-top: 45px;
-    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 11px;
     box-shadow: 4px 4px 4px 0px rgb(156, 156, 156);
   }
 }
@@ -391,27 +393,23 @@ body .popular-book h2 {
   }
 }
 body .popular-book .books {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  justify-content: space-between;
-  margin-left: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 20px;
 }
 @media screen and (max-width: 730px) {
   body .popular-book .books {
-    margin-left: 0;
-    margin-right: 5;
+    gap: 15px;
+    margin: 0 10px;
   }
 }
 @media screen and (max-width: 420px) {
   body .popular-book .books {
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
+    gap: 10px;
+    margin: 0 5px;
   }
 }
 body .popular-book .books .image-card {
@@ -423,11 +421,8 @@ body .popular-book .books .image-card {
   width: 210px;
   border: 1px solid rgb(235, 231, 231);
   border-radius: 10px;
-  display: flex;
-  border-bottom: 4px solid #00B9BE;
   align-items: center;
   justify-content: center;
-  margin-right: 54px;
 }
 @media screen and (max-width: 1024px) {
   body .popular-book .books .image-card {
@@ -612,7 +607,8 @@ body .borrow-and-return .borrow-card .borrow-title h2 a {
 }
 @media screen and (max-width: 420px) {
   body .borrow-and-return .borrow-card .borrow-title h2 a {
-    font-size: 16px;
+    margin-left: 10px;
+    font-size: 14px;
   }
 }
 body .borrow-and-return .borrow-card .borrow-title p {
@@ -628,8 +624,9 @@ body .borrow-and-return .borrow-card .borrow-title p {
 @media screen and (max-width: 420px) {
   body .borrow-and-return .borrow-card .borrow-title p {
     font-size: 10px;
-    margin-left: 13px;
-    line-height: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+    line-height: 14px;
   }
 }
 body .borrow-and-return .borrow-card .img {
@@ -709,7 +706,8 @@ body .borrow-and-return .return-card .return-title h2 a {
 }
 @media screen and (max-width: 420px) {
   body .borrow-and-return .return-card .return-title h2 a {
-    font-size: 16px;
+    font-size: 14px;
+    margin-right: 10px;
   }
 }
 body .borrow-and-return .return-card .return-title p {
@@ -725,8 +723,9 @@ body .borrow-and-return .return-card .return-title p {
 @media screen and (max-width: 420px) {
   body .borrow-and-return .return-card .return-title p {
     font-size: 10px;
-    margin-right: 13px;
-    line-height: 15px;
+    margin-right: 10px;
+    margin-left: 5px;
+    line-height: 14px;
   }
 }
 body #address {

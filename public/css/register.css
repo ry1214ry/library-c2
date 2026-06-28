@@ -150,6 +150,14 @@ body .container-form form h1 {
   body .container-form form h1 {
     font-size: 20px;
     margin-left: 35%;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 420px) {
+  body .container-form form h1 {
+    width: 40%;
+    margin-left: 30%;
+    font-size: 16px;
   }
 }
 body .container-form form .info {
@@ -158,6 +166,12 @@ body .container-form form .info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+}
+@media screen and (max-width: 420px) {
+  body .container-form form .info {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
 }
 body .container-form form .info .card .card-input {
   display: flex;
@@ -250,25 +264,18 @@ body .container-form form h3 {
 }
 body .container-form form .icon {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 10px;
-  align-items: flex-start;
-  margin-left: 35%;
   margin-bottom: 50px;
-}
-@media screen and (max-width: 730px) {
-  body .container-form form .icon {
-    margin-left: 30%;
-  }
-}
-@media screen and (max-width: 420px) {
-  body .container-form form .icon {
-    margin-left: 25%;
-  }
 }
 body .container-form form .icon img {
   width: 35px;
   margin-top: 5px;
+}
+@media screen and (max-width: 420px) {
+  body .container-form form .icon img {
+    width: 28px;
+  }
 }
 body .container-form form:hover {
   box-shadow: 0px 0px 10px 2px teal;

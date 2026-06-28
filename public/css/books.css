@@ -240,6 +240,11 @@ body .group-book {
     padding: 0px 20px;
   }
 }
+body .group-book {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 body .group-book button {
   height: 30px;
   border-radius: 5px;
@@ -247,17 +252,19 @@ body .group-book button {
   font-size: 18px;
   margin-top: 5px;
   background: #EEF0C8;
-  padding: 5px;
+  padding: 5px 10px;
 }
 @media screen and (max-width: 730px) {
   body .group-book button {
-    font-size: 15px;
+    font-size: 14px;
+    padding: 5px 8px;
   }
 }
 @media screen and (max-width: 420px) {
   body .group-book button {
-    height: 25px;
-    font-size: 13px;
+    height: auto;
+    font-size: 12px;
+    padding: 4px 6px;
   }
 }
 body .group-book button a {
@@ -299,10 +306,20 @@ body .search input[type=text] {
   outline: none;
   box-shadow: 1px 1px 1px 1px rgb(232, 227, 227);
 }
+@media screen and (max-width: 730px) {
+  body .search input[type=text] {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 420px) {
   body .search input[type=text] {
     width: 100%;
     height: 17px;
+  }
+}
+@media screen and (max-width: 420px) {
+  body .search {
+    margin: 20px;
   }
 }
 body .search .fa {
@@ -417,10 +434,36 @@ body #Technology .books,
 body #book-of-legends .books,
 body #financial .books,
 body #leadership .books {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 1024px) {
+  body #education-book .books, body #Self-Development .books,
+  body #General-knowledge .books,
+  body #market .books,
+  body #cooking .books,
+  body #Technology .books,
+  body #book-of-legends .books,
+  body #financial .books,
+  body #leadership .books {
+    gap: 15px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  body #education-book .books, body #Self-Development .books,
+  body #General-knowledge .books,
+  body #market .books,
+  body #cooking .books,
+  body #Technology .books,
+  body #book-of-legends .books,
+  body #financial .books,
+  body #leadership .books {
+    gap: 10px;
+    justify-content: center;
+  }
 }
 body #education-book .books .image-card, body #Self-Development .books .image-card,
 body #General-knowledge .books .image-card,
@@ -438,10 +481,8 @@ body #leadership .books .image-card {
   border: 1px solid rgb(230, 224, 224);
   border-bottom: 4px solid #00B9BE;
   border-radius: 10px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 60px;
 }
 @media screen and (max-width: 1024px) {
   body #education-book .books .image-card, body #Self-Development .books .image-card,
@@ -608,4 +649,23 @@ body #book-of-legends .books .image-card:hover button a,
 body #financial .books .image-card:hover button a,
 body #leadership .books .image-card:hover button a {
   color: white;
+}
+
+.section-divider {
+  margin: 0 300px;
+}
+@media screen and (max-width: 1024px) {
+  .section-divider {
+    margin: 0 100px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .section-divider {
+    margin: 0 50px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section-divider {
+    margin: 0 20px;
+  }
 }/*# sourceMappingURL=books.css.map */
